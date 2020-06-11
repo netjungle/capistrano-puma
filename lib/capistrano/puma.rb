@@ -89,7 +89,7 @@ module Capistrano
 
     def register_hooks
       after 'deploy:check', 'puma:check'
-      after 'deploy:finished', 'puma:smart_restart'
+#      after 'deploy:finished', 'puma:smart_restart'
     end
 
     def puma_workers
